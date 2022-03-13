@@ -1,10 +1,14 @@
-import "./styles.css";
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("this is func1"));
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const func2 = (str) => str;
+
+console.log(func2("this is func2"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(func3(10, 2));
